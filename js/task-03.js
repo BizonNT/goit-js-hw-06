@@ -23,4 +23,3 @@ const galleryMarkup = images
   )
   .join("");
 container.insertAdjacentHTML("beforeend", galleryMarkup);
-console.log(galleryMarkup);
