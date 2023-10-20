@@ -4,7 +4,7 @@ const outputName = document.querySelector("#name-output");
 inputName.addEventListener("input", keyPush);
 
 function keyPush(event) {
-  const handleInput = event.currentTarget.value;
+  const handleInput = event.currentTarget.value.trim();
   outputName.textContent = handleInput !== "" ? handleInput : "Anonymous";
   return outputName.textContent;
 }

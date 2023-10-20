@@ -34,13 +34,11 @@ function createBoxes(amount) {
   for (let i = 1; i <= amount; i += step) {
     let size = minSize + 10 * (i - 1);
     let color = getRandomHexColor();
-    markup = `<div style="
-        display: flex;
-        align-items: end;
+    markup += `<div style="
         width: ${size}px;
         height: ${size}px;
         background-color: ${color};
-      ">${markup}</div>`;
+      "></div>`;
   }
   return markup;
 }
